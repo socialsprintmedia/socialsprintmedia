@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Sprint | Elite SMMA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0d0d0d;
+      color: #f5f5f5;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #111;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      margin-left: 30px;
+      color: #f5f5f5;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section.hero {
+      padding: 100px 40px;
+      text-align: center;
+      background-image: url('https://images.unsplash.com/photo-1617103479083-f7d1e7cb7f3b');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    section.hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    section.hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+      max-width: 700px;
+      margin: auto;
+    }
+    .btn {
+      display: inline-block;
+      background-color: #0cf;
+      color: #000;
+      padding: 15px 30px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin-top: 30px;
+    }
+    section.services, section.stats, section.industries, section.philosophy, section.cta, footer {
+      padding: 80px 40px;
+      text-align: center;
+    }
+    section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+    }
+    .boxes {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .box {
+      background-color: #1c1c1c;
+      padding: 30px;
+      border-radius: 12px;
+      width: 300px;
+      text-align: left;
+    }
+    .box h3 {
+      color: #0cf;
+      margin-bottom: 10px;
+    }
+    .box p {
+      color: #ccc;
+    }
+    section.cta a {
+      margin-top: 20px;
+    }
+    footer {
+      font-size: 0.9rem;
+      background-color: #111;
+      color: #666;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav a {
+        margin: 10px 0 0;
+      }
+      .boxes {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Social Sprint Logo" width="150"> 
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#stats">Clients</a>
+      <a href="#industries">Industries</a>
+      <a href="#cta">Book Call</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Your Competitor Just Called. They’re Worried You’ll Hire Us.</h1>
+    <p>We help bold brands like real estate, fashion, luxury, jewelry, cafes, restaurants, and ecom scale with a monastic focus. We don't do PR. No email marketing. No websites. Just results, razor-sharp. Period.</p>
+    <a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUt1ZFBZcUtSMW5ffGRlZmF1bHR8Njk5ZmYxMGRiNmY2ZGY0ZGYzMjA2ZDUyMDY0NDkzNTI" class="btn" target="_blank">Book A Call With Us</a>
+  </section>
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="boxes">
+      <div class="box">
+        <h3>Content Creation</h3>
+        <p>We craft visuals and scripts that demand attention and drive emotion.</p>
+      </div>
+      <div class="box">
+        <h3>Paid Advertising</h3>
+        <p>Meta & Google ad strategies that double, triple, even 6X revenue.</p>
+      </div>
+      <div class="box">
+        <h3>Instagram Growth</h3>
+        <p>Watch your presence explode using our organic + paid methods.</p>
+      </div>
+      <div class="box">
+        <h3>Social Media Management</h3>
+        <p>Leave content planning, posting, and DMs to us.</p>
+      </div>
+    </div>
+  </section>
+  <section id="stats" class="stats">
+    <h2>Our Impact</h2>
+    <div class="boxes">
+      <div class="box">
+        <h3>208 Clients Helped</h3>
+        <p>We’ve worked with over 208 premium brands.</p>
+      </div>
+      <div class="box">
+        <h3>203 Success Stories</h3>
+        <p>Only 5 didn’t scale. Don’t judge us by wins, judge us by the rare losses.</p>
+      </div>
+      <div class="box">
+        <h3>Results Like 2X, 4X, 6X</h3>
+        <p>We scale aggressively. We don’t guess. We execute.</p>
+      </div>
+    </div>
+  </section>
+  <section id="industries" class="industries">
+    <h2>Who We Help</h2>
+    <div class="boxes">
+      <div class="box">
+        <h3>Real Estate</h3><p>From luxury flats to villa sales, we get you buyers—fast.</p>
+      </div>
+      <div class="box">
+        <h3>Fashion & Luxury Brands</h3><p>Positioning that makes your brand stand out and sell out.</p>
+      </div>
+      <div class="box">
+        <h3>Jewelry Brands</h3><p>Premium aesthetic, premium clients. We do both.</p>
+      </div>
+      <div class="box">
+        <h3>Cafes, Hotels & Restaurants</h3><p>We fill your seats, boost delivery, and grow loyal customers.</p>
+      </div>
+      <div class="box">
+        <h3>Ecommerce & Dropshipping</h3><p>Turn casual visitors into repeat buyers at scale.</p>
+      </div>
+    </div>
+  </section>
+  <section class="philosophy">
+    <h2>Our Philosophy</h2>
+    <p>We’re not for everyone. We’re for brands that want to dominate. That are done playing small. And done burning money on weak strategies. We don’t experiment. We execute. This is not trial & error. This is Social Sprint.</p>
+  </section>
+  <section id="cta" class="cta">
+    <h2>Schedule Your Call</h2>
+    <p>Get a clear roadmap on how to 2X, 3X, 4X your growth online. Free call. No fluff.</p>
+    <a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUt1ZFBZcUtSMW5ffGRlZmF1bHR8Njk5ZmYxMGRiNmY2ZGY0ZGYzMjA2ZDUyMDY0NDkzNTI" class="btn" target="_blank">Book A Call With Us</a>
+  </section>
+  <section class="cta">
+    <h2>🎥 Watch Free Case Study</h2>
+    <p>How Social Sprint is scaling brands through strategic paid advertising and aggressive content-driven growth. Learn how we build ROI and dominance.</p>
+    <a class="btn" href="https://your-casestudy-link.com" target="_blank">Watch Case Study</a>
+  </section>
+  <footer>
+    <p>Have a general inquiry? Email us: socialsprintmedia.net@gmail.com | Call us: +91 8767695492</p>
+    <p>© 2025 Social Sprint Media. All rights reserved.</p>
+  </footer>
+</body>
+</html>
