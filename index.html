@@ -116,7 +116,43 @@
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Social Sprint Logo" width="150" height="100">
+    <img src="logo.png" alt="Social Sprint Logo" class="site-logo">
+        <!-- Text version as fallback -->
+    <h1 class="logo-text">SOCIALSPRINT <span>BOOSTENGAGE</span></h1>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    padding: 20px;
+    background: #fff; /* Adjust to match your design */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .site-logo {
+    height: 50px; /* Ideal starting height - adjust as needed */
+    width: auto; /* Maintains aspect ratio */
+  }
+  
+  .logo-text {
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #000;
+    margin: 0;
+  }
+  
+  .logo-text span {
+    display: block;
+    font-size: 18px;
+    font-weight: normal;
+  }
+</style>
     <nav>
       <a href="#services">Services</a>
       <a href="#stats">Clients</a>
