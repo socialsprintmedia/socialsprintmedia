@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1024"> <!-- Forces desktop layout on all screens -->
   <title>Social Sprint | Elite SMMA</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
@@ -25,19 +25,8 @@
       align-items: center;
       border-bottom: 1px solid #222;
     }
-    .logo-container {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-    .logo-container img {
-      height: 40px;
-    }
-    .logo-text {
-      font-size: 1.6rem;
-      font-weight: 700;
-      color: #ffffff;
-      letter-spacing: 1px;
+    header img {
+      height: 50px;
     }
     nav a {
       margin-left: 30px;
@@ -110,50 +99,26 @@
       background-color: #111;
       color: #666;
     }
-
-    /* Force desktop layout on all screen sizes */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: row !important;
-        align-items: center !important;
-      }
-      nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-      }
-      nav a {
-        margin: 0 10px;
-      }
-      .boxes {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-    }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo-container">
-      <img src="https://i.imgur.com/Ma5b92B.png" alt="Logo" />
-      <div class="logo-text">SOCIAL SPRINT</div>
-    </div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#stats">Clients</a>
-      <a href="#industries">Industries</a>
-      <a href="#cta">Book Call</a>
-    </nav>
-  </header>
-
+  <div style="display: flex; align-items: center;">
+    <img src="logo.png" alt="Social Sprint Logo" style="height: 40px; margin-right: 10px;" />
+    <span class="logo-text">SOCIAL SPRINT</span>
+  </div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#stats">Clients</a>
+    <a href="#industries">Industries</a>
+    <a href="#cta">Book Call</a>
+  </nav>
+</header>
   <section class="hero">
     <h1>Your Competitor Just Called. They’re Worried You’ll Hire Us.</h1>
     <p>We help bold brands like real estate, fashion, luxury, jewelry, cafes, restaurants, and ecom scale with a monastic focus. We don't do PR. No email marketing. No websites. Just results, razor-sharp. Period.</p>
     <a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUt1ZFBZcUtSMW5ffGRlZmF1bHR8Njk5ZmYxMGRiNmY2ZGY0ZGYzMjA2ZDUyMDY0NDkzNTI" class="btn" target="_blank">Book A Call With Us</a>
   </section>
-
   <section id="services" class="services">
     <h2>Our Services</h2>
     <div class="boxes">
@@ -175,7 +140,6 @@
       </div>
     </div>
   </section>
-
   <section id="stats" class="stats">
     <h2>Our Impact</h2>
     <div class="boxes">
@@ -193,50 +157,40 @@
       </div>
     </div>
   </section>
-
   <section id="industries" class="industries">
     <h2>Who We Help</h2>
     <div class="boxes">
       <div class="box">
-        <h3>Real Estate</h3>
-        <p>From luxury flats to villa sales, we get you buyers—fast.</p>
+        <h3>Real Estate</h3><p>From luxury flats to villa sales, we get you buyers—fast.</p>
       </div>
       <div class="box">
-        <h3>Fashion & Luxury Brands</h3>
-        <p>Positioning that makes your brand stand out and sell out.</p>
+        <h3>Fashion & Luxury Brands</h3><p>Positioning that makes your brand stand out and sell out.</p>
       </div>
       <div class="box">
-        <h3>Jewelry Brands</h3>
-        <p>Premium aesthetic, premium clients. We do both.</p>
+        <h3>Jewelry Brands</h3><p>Premium aesthetic, premium clients. We do both.</p>
       </div>
       <div class="box">
-        <h3>Cafes, Hotels & Restaurants</h3>
-        <p>We fill your seats, boost delivery, and grow loyal customers.</p>
+        <h3>Cafes, Hotels & Restaurants</h3><p>We fill your seats, boost delivery, and grow loyal customers.</p>
       </div>
       <div class="box">
-        <h3>Ecommerce & Dropshipping</h3>
-        <p>Turn casual visitors into repeat buyers at scale.</p>
+        <h3>Ecommerce & Dropshipping</h3><p>Turn casual visitors into repeat buyers at scale.</p>
       </div>
     </div>
   </section>
-
   <section class="philosophy">
     <h2>Our Philosophy</h2>
     <p>We’re not for everyone. We’re for brands that want to dominate. That are done playing small. And done burning money on weak strategies. We don’t experiment. We execute. This is not trial & error. This is Social Sprint.</p>
   </section>
-
   <section id="cta" class="cta">
     <h2>Schedule Your Call</h2>
     <p>Get a clear roadmap on how to 2X, 3X, 4X your growth online. Free call. No fluff.</p>
     <a href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=UUt1ZFBZcUtSMW5ffGRlZmF1bHR8Njk5ZmYxMGRiNmY2ZGY0ZGYzMjA2ZDUyMDY0NDkzNTI" class="btn" target="_blank">Book A Call With Us</a>
   </section>
-
   <section class="cta">
     <h2>🎥 Watch Free Case Study</h2>
     <p>How Social Sprint is scaling brands through strategic paid advertising and aggressive content-driven growth. Learn how we build ROI and dominance.</p>
     <a class="btn" href="https://your-casestudy-link.com" target="_blank">Watch Case Study</a>
   </section>
-
   <footer>
     <p>Have a general inquiry? Email us: socialsprintmedia.net@gmail.com | Call us: +91 8767695492</p>
     <p>© 2025 Social Sprint Media. All rights reserved.</p>
