@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=1024"> <!-- Forces desktop layout on all screens -->
   <title>Social Sprint | Elite SMMA</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
@@ -99,24 +99,12 @@
       background-color: #111;
       color: #666;
     }
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-      nav a {
-        margin: 10px 0 0;
-      }
-      .boxes {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
+    /* REMOVED MEDIA QUERIES TO MAKE LAYOUT FIXED */
   </style>
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="Social Sprint Logo" height:"250px" width:"auto">
+    <img src="logo.png" alt="Social Sprint Logo" width="150"> 
     <nav>
       <a href="#services">Services</a>
       <a href="#stats">Clients</a>
@@ -203,11 +191,6 @@
   </section>
   <footer>
     <p>Have a general inquiry? Email us: socialsprintmedia.net@gmail.com | Call us: +91 8767695492</p>
-    <p>© 2025 Social Sprint Media. All rights reserved.</p>
-  </footer>
-</body>
-</html>
-
     <p>© 2025 Social Sprint Media. All rights reserved.</p>
   </footer>
 </body>
